@@ -26,12 +26,6 @@ export const TaoMiningPanel = ({
   const [showMinerWizard, setShowMinerWizard] = useState(false)
   const [showModelWizard, setShowModelWizard] = useState(false)
   const [minersRefreshing, setMinersRefreshing] = useState(false)
-  // const [multiMinerUnlocked, setMultiMinerUnlocked] = useState(false);
-  // const taoMiners = [
-  //   { id: 1, model: 'Claude-3.5-Sonnet', status: 'active', earnings: '$42.50', hashrate: '1.2 TH/s' },
-  //   { id: 2, model: 'GPT-4', status: 'active', earnings: '$38.75', hashrate: '0.9 TH/s' },
-  //   { id: 3, model: 'Ollama-Phi3', status: 'idle', earnings: '$0.00', hashrate: '0.0 TH/s' },
-  // ]
 
   const fetchWallets = async () => {
     const wallets: WalletConfig[] = await window.bittensorWalletAPI.loadConfig()
